@@ -11,7 +11,8 @@ panic: assertion failed: Page expected to be: 202, but self identifies as 247794
 
 The standard `bbolt compact` tool will also panic on these databases because bbolt v1.4.x has strict page integrity checks.
 
-# THIS APP SHOULD ONLY BE RUN AS LAST RESORT WHEN YOU HAVE NO OTHER OPTION AS IT WILL LOOSE DATA IN TABLES THAT CANNOT BE RECOVERED
+# THIS APP SHOULD ONLY BE RUN AS LAST RESORT WHEN YOU HAVE NO OTHER OPTION AS IT WILL LOSE DATA IN TABLES THAT CANNOT BE RECOVERED
+For me this applications succesfully recovere a databse that it turned out had been corrupted on 6mo of backups.
 
 ## How it works
 
