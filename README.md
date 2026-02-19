@@ -14,6 +14,8 @@ The standard `bbolt compact` tool will also panic on these databases because bbo
 # THIS APP SHOULD ONLY BE RUN AS LAST RESORT WHEN YOU HAVE NO OTHER OPTION AS IT WILL LOSE DATA IN TABLES THAT CANNOT BE RECOVERED
 For me this applications succesfully recovere a databse that it turned out had been corrupted on 6mo of backups.
 
+### MAKE SURE TO BACKUP YOUR CORRUPTED DATABASE BEFORE YOUR PERFORM THIS OPERATION
+
 ## How it works
 
 This tool uses **bbolt v1.3.x** which has less strict page assertions, allowing it to open databases that v1.4.x refuses. It then:
