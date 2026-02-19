@@ -1,0 +1,5 @@
+recover_bolt
+portainer.db
+portainer-recovered.db
+portainer-corrupt.db
+*.db
